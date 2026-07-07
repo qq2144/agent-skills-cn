@@ -4,6 +4,8 @@
 
 Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.
 
+> 中文说明：这是一个面向 AI 编码代理的工程化技能库。它把资深工程师在需求定义、计划拆分、增量实现、验证、评审和发布中的关键流程，沉淀为可复用的技能文件，帮助代理稳定产出生产级质量。
+
 <a href="https://trendshift.io/repositories/25200" target="_blank"><img src="https://trendshift.io/api/badge/repositories/25200" alt="addyosmani%2Fagent-skills | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
 ![Addy's Agent Skills](https://addyosmani.com/assets/images/addys-agent-skills.jpg)
@@ -22,6 +24,8 @@ Skills encode the workflows, quality gates, and best practices that senior engin
 ## Commands
 
 8 slash commands that map to the development lifecycle. Each one activates the right skills automatically.
+
+> 中文说明：本节命令与用法保持英文原文，便于直接复制执行。你可以把它理解为从「定义需求」到「上线发布」的一条标准工程流水线入口。
 
 | What you're doing | Command | Key principle |
 |-------------------|---------|---------------|
@@ -269,6 +273,8 @@ Quick-reference material that skills pull in when needed:
 
 Every skill follows a consistent anatomy:
 
+> 中文说明：所有技能都遵循统一结构（Frontmatter + 固定章节），这样不同代理在不同工具里执行时，触发条件、流程步骤和验收证据都能保持一致。
+
 ```
 ┌─────────────────────────────────────────────────┐
 │  SKILL.md                                       │
@@ -297,6 +303,8 @@ Every skill follows a consistent anatomy:
 ---
 
 ## Project Structure
+
+中文说明：仓库按“技能内容、代理角色、命令入口、参考资料”分层组织，便于按职责查找和扩展。
 
 ```
 agent-skills/
@@ -356,6 +364,8 @@ Wondering how this stacks up against [Superpowers](https://github.com/obra/super
 ## Contributing
 
 Skills should be **specific** (actionable steps, not vague advice), **verifiable** (clear exit criteria with evidence requirements), **battle-tested** (based on real workflows), and **minimal** (only what's needed to guide the agent).
+
+中文说明：提交贡献时，优先做小而聚焦的改动，确保技能可执行、可验证，并避免与现有技能重复；新增技能前请先完成预检查（目录检索、PR 重叠检查、anatomy 对齐）。
 
 See [docs/skill-anatomy.md](docs/skill-anatomy.md) for the format specification and [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
